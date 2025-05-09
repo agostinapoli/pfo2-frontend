@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mi primer sitio web</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Oswald:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Barra de navegación principal: Incluye enlaces internos para facilitar la navegación del usuario. Se optó por un menú fijo superior para un acceso sencillo. 
+Posible mejora futura: Implementar un menú hamburguesa para optimizar aún más la visualización en dispositivos móviles. -->
+
+    <h1>Bienvenidos</h1>
+
+    <nav class="navbarScroll">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+
+      <h2>Sobre mí</h2>
+      <p>Soy Agostina, una apasionada por la tecnología y la creatividad. Me encanta aprender, experimentar y hacer que
+        las ideas se conviertan en algo real. Como desarrolladora, mi misión es hacer cosas que sirvan, que estén bien
+        pensadas y que hagan la vida un poco más fácil, o al menos más linda.</p>
+      <img src="img/img_autor.png" alt="Foto del autor del sitio" class="foto-usuario">
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div id="tarjetas">
+        <div class="custom-card">
+          <h3 class="custom-card__title">Mi primer sitio web</h3>
+          <img src="img/img_tarjeta1.png" alt="Ícono Proyecto 1" class="custom-card__icon" />
+          <p class="custom-card__description">Usé HTML y CSS para crear una página con diseño responsivo y estilo
+            propio.</p>
+          <div class="custom-card__footer">
+            <button type="button" class="custom-card__button">Ver más</button>
+          </div>
+        </div>
+
+        <div class="custom-card">
+          <h3 class="custom-card__title">Sitio interactivo</h3>
+          <img src="img/img_tarjeta2.jpeg" alt="Ícono Proyecto 2" class="custom-card__icon" />
+          <p class="custom-card__description">Experimenté con Flexbox y animaciones para lograr una experiencia fluida e
+            intuitiva.</p>
+          <div class="custom-card__footer">
+            <button type="button" class="custom-card__button">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="habilidades">
+        <h3>Habilidades</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git & GitHub</li>
+          <li>JavaScript (en curso)</li>
+          <li>React (quiero aprender)</li>
+          <li>Node.js (me interesa aprender)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+
+      <div id="mensaje-enviado" class="mensaje-oculto">
+        Tus datos fueron enviados exitosamente
+      </div>
+    </section>
+
+
+    <!-- Carrousel de películas: Implementado usando HTML, CSS y JavaScript para mostrar imágenes de forma cíclica y atractiva. 
+     Se agregó navegación manual con botones y navegación automática con intervalos de tiempo definidos.
+Posible mejora futura: Añadir indicadores visuales (puntos o barras inferiores) para mostrar claramente en qué slide se encuentra el usuario y 
+facilitar la navegación directa a un slide específico. -->
+
+    <section id="peliculas">
+      <h2>Películas favoritas</h2>
+      <div class="carrusel">
+        <button class="carrusel-btn izquierda">&#10094;</button>
+        <div class="carrusel-peliculas">
+          <div class="slide active">
+            <img src="img/el_viaje_de_chihiro.jpeg" alt="Portada de El viaje de Chihiro" class="pelicula-img">
+            <h3>El viaje de Chihiro</h3>
+            <p>Una obra de arte del Studio Ghibli, con una historia mágica y profunda sobre el crecimiento personal.</p>
+          </div>
+          <div class="slide">
+            <img src="img/matrix.jpeg" alt="Portada de Matrix" class="pelicula-img">
+            <h3>Matrix</h3>
+            <p>Una película que revolucionó el cine y plantea preguntas existenciales sobre la realidad.</p>
+          </div>
+          <div class="slide">
+            <img src="img/fight_club.jpeg" alt="Portada de El club de la pelea" class="pelicula-img">
+            <h3>El club de la pelea</h3>
+            <p>Crítica al consumismo y una exploración de la identidad a través de una historia atrapante.</p>
+          </div>
+        </div>
+        <button class="carrusel-btn derecha">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por Agostina - 2025</p>
+  </footer>
+
+ 
+
+<div id="countdown-container">
+  <span id="countdown">--:--:--</span>
+</div>
+ <script src="script.js"></script>
+
+</body>
+
+</html>
