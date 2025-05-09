@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi primer sitio web</title>
   <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Oswald:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Oswald:wght@400;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
-<header>
-  <nav class="navbarScroll">
-    <div class="nav-container">
-      <div class="logo">Bienvenidos</div>
+  <header>
+    <nav class="navbarScroll">
+      <div class="nav-container">
+        <div class="logo">Bienvenidos</div>
 
-      <div class="menu-toggle" id="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="menu-toggle" id="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main>
-<section id="sobre-mi">
-  <h2>Sobre mí</h2>
-  <div class="sobre-mi-contenedor">
-    <div class="sobre-mi-texto">
-      <p>Soy Agostina, una apasionada por la tecnología y la creatividad. Me encanta aprender, experimentar y hacer que
-        las ideas se conviertan en algo real. Como desarrolladora, mi misión es hacer cosas que sirvan, que estén bien
-        pensadas y que hagan la vida un poco más fácil, o al menos más linda.</p>
-    </div>
-    <img src="img/img_autor.png" alt="Foto del autor del sitio" class="foto-usuario">
-  </div>
-</section>
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="sobre-mi-contenedor">
+        <div class="sobre-mi-texto">
+          <p>Soy Agostina, una apasionada por la tecnología y la creatividad. Me encanta aprender, experimentar y hacer
+            que
+            las ideas se conviertan en algo real. Como desarrolladora, mi misión es hacer cosas que sirvan, que estén
+            bien
+            pensadas y que hagan la vida un poco más fácil, o al menos más linda.</p>
+        </div>
+        <img src="img/img_autor.png" alt="Foto del autor del sitio" class="foto-usuario">
+      </div>
+    </section>
 
 
 
@@ -135,17 +140,17 @@
 
   <footer>
     <p>Creado por Agostina Poli - 2025</p>
-     <div id="visitas-container">
-    <span>Visitas al sitio: <strong id="contador-visitas">0</strong></span>
-  </div>
+    <div id="visitas-container">
+      <span>Visitas al sitio: <strong id="contador-visitas">0</strong></span>
+    </div>
   </footer>
 
- 
 
-<div id="countdown-container">
-  <span id="countdown">--:--:--</span>
-</div>
- <script src="script.js"></script>
+
+  <div id="countdown-container">
+    <span id="countdown">--:--:--</span>
+  </div>
+  <script src="script.js"></script>
 
 </body>
 

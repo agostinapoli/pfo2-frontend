@@ -19,7 +19,7 @@ body {
   color: var(--color-texto);
   margin: 0;
   padding: 0;
-   padding-top: 0px;
+  padding-top: 0px;
 }
 
 main {
@@ -32,9 +32,9 @@ main {
 
 
 header {
-    background-color: transparent;
+  background-color: transparent;
   padding: 0;
-  
+
 }
 
 footer {
@@ -44,7 +44,9 @@ footer {
   padding: 1rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-weight: bold;
@@ -83,14 +85,14 @@ nav ul li a:hover {
 
 /* NAVBAR scroll: agrega fondo más opaco al hacer scroll */
 .navbarScroll.navbarDark {
-  background-color: rgba(0, 0, 0, 0.9); /* negro con algo de transparencia */
-  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1); /* leve brillo sutil para que se vea */
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbarScroll {
   background-color: #000;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 
@@ -111,7 +113,7 @@ nav ul li a:hover {
 
 
 .menu-toggle {
-  display: none; /* oculta el icono hamburguesa en pantallas grandes */
+  display: none;
 }
 
 
@@ -146,16 +148,16 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   filter: brightness(0.9);
 
-    margin-top: 1rem;
+  margin-top: 1rem;
 
-      width: 250px;
+  width: 250px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   filter: brightness(0.9);
   flex-shrink: 0;
 }
-  
+
 
 
 /* TARJETAS DE PROYECTOS */
@@ -284,6 +286,7 @@ form button:hover {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -405,6 +408,7 @@ form button:hover {
 
 
 /* RESPONSIVE */
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -446,43 +450,32 @@ form button:hover {
   }
 
 
-
-
-
-/*responsive menu hamburguesa*/
-
- .menu-toggle {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  padding: 0.5rem;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
-  z-index: 10000; /* que quede por encima */
-}
-
-
-.nav-links {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 70px;
-  right: 1.5rem;
-  background-color: #000;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-  z-index: 9999;
-  overflow: hidden; /* ← acá va */
-}
-
-  
-
-  .nav-links.active {
-    display: flex; /* se muestra solo cuando se hace click */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    z-index: 10000;
   }
 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1.5rem;
+    background-color: #000;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
-
-

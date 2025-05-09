@@ -8,41 +8,41 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("navbarDark");
   }
 });
-/*modo oscuro*/ 
+
 
 const form = document.getElementById("formulario-contacto");
-    const mensaje = document.getElementById("mensaje-enviado");
+const mensaje = document.getElementById("mensaje-enviado");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      mensaje.classList.add("mostrar");
-      form.reset();
-    });
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  mensaje.classList.add("mostrar");
+  form.reset();
+});
 
-    const slides = document.querySelectorAll(".slide");
-    const btnIzq = document.querySelector(".carrusel-btn.izquierda");
-    const btnDer = document.querySelector(".carrusel-btn.derecha");
-    let indice = 0;
+const slides = document.querySelectorAll(".slide");
+const btnIzq = document.querySelector(".carrusel-btn.izquierda");
+const btnDer = document.querySelector(".carrusel-btn.derecha");
+let indice = 0;
 
-    function mostrarSlide(i) {
-      slides.forEach(slide => slide.classList.remove("active"));
-      slides[i].classList.add("active");
-    }
+function mostrarSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
 
-    btnIzq.addEventListener("click", () => {
-      indice = (indice - 1 + slides.length) % slides.length;
-      mostrarSlide(indice);
-    });
+btnIzq.addEventListener("click", () => {
+  indice = (indice - 1 + slides.length) % slides.length;
+  mostrarSlide(indice);
+});
 
-    btnDer.addEventListener("click", () => {
-      indice = (indice + 1) % slides.length;
-      mostrarSlide(indice);
-    });
+btnDer.addEventListener("click", () => {
+  indice = (indice + 1) % slides.length;
+  mostrarSlide(indice);
+});
 
-    mostrarSlide(indice);
+mostrarSlide(indice);
 
-    /*COUNTDOWN*/
-    function actualizarCountdown() {
+/*COUNTDOWN*/
+function actualizarCountdown() {
   const countdown = document.getElementById("countdown");
   const finCursada = new Date("2025-07-30T23:59:59");
   const ahora = new Date();
