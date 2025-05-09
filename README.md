@@ -13,3 +13,16 @@ Cambios implementados al momento:
 - Se agrego una nueva fuente para los titulos 
 
 - Mejora de la estructura del codigo CSS: se separaron los estulos en secciones para mejor legibilidad y facilidad en la edicion
+
+- Las capturas de pantalla del sitio antes y después de los cambios se encuentran en la carpeta img:
+
+    Antes: img/sitio-antes.png
+
+    Después: img/sitio-despues.png
+
+
+### Vista antes de los cambios
+![Sitio antes](img/sitio-antes.png)
+
+### Vista después de los cambios
+![Sitio después](img/sitio-despues.png)
