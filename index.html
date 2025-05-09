@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<!-- -->
-
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Mi primer sitio web</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Oswald:wght@400;700&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Oswald:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <header>
-    <!-- Barra de navegación principal: Incluye enlaces internos para facilitar la navegación del usuario. Se optó por un menú fijo superior para un acceso sencillo. 
-Posible mejora futura: Implementar un menú hamburguesa para optimizar aún más la visualización en dispositivos móviles. -->
+<header>
+  <nav class="navbarScroll">
+    <div class="nav-container">
+      <div class="logo">Bienvenidos</div>
 
-    <h1>Bienvenidos</h1>
+      <div class="menu-toggle" id="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <nav class="navbarScroll">
-      <ul>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main>
-    <section id="sobre-mi">
-
-      <h2>Sobre mí</h2>
+<main>
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <div class="sobre-mi-contenedor">
+    <div class="sobre-mi-texto">
       <p>Soy Agostina, una apasionada por la tecnología y la creatividad. Me encanta aprender, experimentar y hacer que
         las ideas se conviertan en algo real. Como desarrolladora, mi misión es hacer cosas que sirvan, que estén bien
         pensadas y que hagan la vida un poco más fácil, o al menos más linda.</p>
-      <img src="img/img_autor.png" alt="Foto del autor del sitio" class="foto-usuario">
-    </section>
+    </div>
+    <img src="img/img_autor.png" alt="Foto del autor del sitio" class="foto-usuario">
+  </div>
+</section>
+
+
 
     <section id="proyectos">
       <h2>Proyectos</h2>
@@ -99,11 +105,6 @@ Posible mejora futura: Implementar un menú hamburguesa para optimizar aún más
       </div>
     </section>
 
-
-    <!-- Carrousel de películas: Implementado usando HTML, CSS y JavaScript para mostrar imágenes de forma cíclica y atractiva. 
-     Se agregó navegación manual con botones y navegación automática con intervalos de tiempo definidos.
-Posible mejora futura: Añadir indicadores visuales (puntos o barras inferiores) para mostrar claramente en qué slide se encuentra el usuario y 
-facilitar la navegación directa a un slide específico. -->
 
     <section id="peliculas">
       <h2>Películas favoritas</h2>

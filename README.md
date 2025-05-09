@@ -5,3 +5,9 @@ Cambios implementados al momento:
 - Se agrego un countdown que marca cuando finaliza la cursada de esta materia con dias, horas y minutos. 
 
 - Se agrego un contador de visitas al sitio, sin el enlace correspondiente a la parte backend  
+
+- Modifique la navbar para que al achicar la pantalla aparezca como menu hamburguesa, mejorado la experiencia de usuario 
+
+- Modifique el tamaño de la imagen principal, y cambie de lugar el texto para que se visualice al lado de la imagen, dando una version más agradable a la vista 
+
+- Se agrego una nueva fuente para los titulos 

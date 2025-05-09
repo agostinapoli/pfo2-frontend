@@ -19,10 +19,25 @@ body {
   color: var(--color-texto);
   margin: 0;
   padding: 0;
-   padding-top: 40px;
+   padding-top: 0px;
 }
 
-header, footer {
+main {
+  margin-top: 80px;
+  padding: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+header {
+    background-color: transparent;
+  padding: 0;
+  
+}
+
+footer {
   background-color: #000;
   color: var(--color-texto);
   text-align: center;
@@ -30,7 +45,7 @@ header, footer {
 }
 
 h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -73,13 +88,53 @@ nav ul li a:hover {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.navbarScroll {
+  background-color: #000;
+  overflow: hidden; 
+}
 
 
-main {
-  padding: 2rem;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.menu-toggle {
+  display: none; /* oculta el icono hamburguesa en pantallas grandes */
+}
+
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-texto);
+  border-radius: 3px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: bold;
+}
+
+
 
 .foto-usuario {
   display: block;
@@ -90,7 +145,18 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   filter: brightness(0.9);
+
+    margin-top: 1rem;
+
+      width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.9);
+  flex-shrink: 0;
 }
+  
+
 
 /* TARJETAS DE PROYECTOS */
 #tarjetas {
@@ -310,6 +376,33 @@ form button:hover {
   color: var(--color-texto);
 }
 
+.sobre-mi-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#sobre-mi h2 {
+  font-size: 2.2rem;
+}
+
+.sobre-mi-texto p {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.sobre-mi-texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -347,11 +440,49 @@ form button:hover {
     padding: 0.3rem 0.8rem;
   }
 
+  .sobre-mi-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
 
 
 
 
 
+/*responsive menu hamburguesa*/
+
+ .menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  z-index: 10000; /* que quede por encima */
+}
+
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 1.5rem;
+  background-color: #000;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+  overflow: hidden; /* ← acá va */
+}
+
+  
+
+  .nav-links.active {
+    display: flex; /* se muestra solo cuando se hace click */
+  }
 
 }
+
 
