@@ -11,3 +11,5 @@ Cambios implementados al momento:
 - Modifique el tamaño de la imagen principal, y cambie de lugar el texto para que se visualice al lado de la imagen, dando una version más agradable a la vista 
 
 - Se agrego una nueva fuente para los titulos 
+
+- Mejora de la estructura del codigo CSS: se separaron los estulos en secciones para mejor legibilidad y facilidad en la edicion
