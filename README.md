@@ -26,3 +26,6 @@ Cambios implementados al momento:
 
 ### Vista después de los cambios
 ![Sitio después](img/sitio-despues.png)
+
+
+Aclaracion importante: durante el desarrollo el menú hamburguesa funcionaba correctamente en modo responsive, pero al hacer algunos ajustes de último momento, dejó de desplegarse y no logré corregirlo a tiempo para la entrega. Estoy al tanto del problema y voy a seguir trabajando para solucionarlo.
