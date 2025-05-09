@@ -66,3 +66,19 @@ setInterval(actualizarCountdown, 1000);
 
 
 
+/*CONTADOR DE VISITAS*/
+function contarVisitas() {
+  const key = 'contadorVisitas';
+  let visitas = localStorage.getItem(key);
+
+  if (!visitas) {
+    visitas = 1;
+  } else {
+    visitas = parseInt(visitas) + 1;
+  }
+
+  localStorage.setItem(key, visitas);
+  document.getElementById('contador-visitas').textContent = visitas;
+}
+
+contarVisitas();

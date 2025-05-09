@@ -304,6 +304,13 @@ form button:hover {
   min-width: 120px;
 }
 
+#visitas-container {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-texto);
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav ul {
